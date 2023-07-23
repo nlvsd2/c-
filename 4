@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() //오버플로우: 최대 범위를 넘어가면 최솟값부터 셈
+           //언더플로우: 최소 범위를 넘어가면 최댓값부터 셈
+{
+    char num1 = 128; //char ==> -128~127
+
+    unsigned char num2 = 256; //unsigned char ==> 0~255
+
+    printf("%d %u\n", num1, num2);
+    
+    return 0;
+}
