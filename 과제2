@@ -1,0 +1,28 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <iostream>
+#include <cstdio>
+
+#define PRINT_NAME std::cout << "[이름: 천유정]" << std::endl
+#define PRINT_ID std::cout << "[학번: 202322523]" << std::endl
+#define PRINT_TIMESTAMP std::cout << "[" << __TIMESTAMP__ << "]\n" << std::endl
+
+int main()
+{
+	PRINT_NAME;
+	PRINT_ID;
+	PRINT_TIMESTAMP;
+
+	int num;
+
+	std::cout << "[C++]" << std::endl;
+	std::cout << "Enter a number:" << std::endl;
+	std::cin >> num;
+	std::cout << "You entered: " << num << std::endl;
+
+	printf("[C]\n");
+	printf("Enter a number: ");
+	scanf("%d", &num);
+	printf("You entered: %d\n", num);
+
+	return 0;
+}
