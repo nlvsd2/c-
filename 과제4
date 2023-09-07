@@ -1,0 +1,27 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <iostream>
+#include <cstdio>
+
+#define PRINT_NAME std::cout << "[이름: 천유정]" << std::endl
+#define PRINT_ID std::cout << "[학번: 202322523]" << std::endl
+#define PRINT_TIMESTAMP std::cout << "[" << __TIMESTAMP__ << "]\n" << std::endl
+
+#define NAME "CUK"
+#define AGE 168
+#define PRINT_ADDR std::cout << "Bucheon-si, Gyeonggi-do" << std::endl
+
+int main()
+{
+	PRINT_NAME;
+	PRINT_ID;
+	PRINT_TIMESTAMP;
+
+	std::cout << "[[[" << __FILE__ << "]]]" << std::endl;
+	std::cout << "[[[" << __TIMESTAMP__ << "]]]\n" << std::endl;
+
+	std::cout << "Name: " << NAME << std::endl;
+	std::cout << "Age: " << AGE << std::endl;
+	PRINT_ADDR;
+
+	return 0;
+}
