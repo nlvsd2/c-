@@ -1,0 +1,45 @@
+#include <iostream>
+
+ 
+
+#define PRINT_NAME std::cout << "[이름: 천유정]" << std::endl
+
+#define PRINT_ID std::cout << "[학번: 202322523]" << std::endl
+
+#define PRINT_TIMESTAMP std::cout << "[" << __TIMESTAMP__ << "]\n" << std::endl
+
+ 
+
+int main()
+
+{
+
+    PRINT_NAME;
+
+    PRINT_ID;
+
+    PRINT_TIMESTAMP;
+
+ 
+
+    int num = 0;
+
+ 
+
+    std::cout << "Enter number: ";
+
+    std::cin >> num;
+
+ 
+
+    std::cout << "Decimal: " << num << std::endl;
+
+    std::cout << "Octal: 0" << std::oct << num << std::endl;
+
+    std::cout << "Hex: 0x" << std::hex << num << std::endl;
+
+ 
+
+    return 0;
+
+}
