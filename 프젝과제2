@@ -1,0 +1,59 @@
+#include <iostream>
+
+ 
+
+#define PRINT_NAME std::cout << "[이름: 천유정]" << std::endl
+
+#define PRINT_ID std::cout << "[학번: 202322523]" << std::endl
+
+#define PRINT_TIMESTAMP std::cout << "[" << __TIMESTAMP__ << "]\n" << std::endl
+
+ 
+
+#define ADD(x, y) ((x) + (y))
+
+#define SUB(x, y) ((x) - (y))
+
+#define MUL(x, y) ((x) * (y))
+
+#define DIV(x, y) ((x) / (y))
+
+ 
+
+ 
+
+int main()
+
+{
+
+    PRINT_NAME;
+
+    PRINT_ID;
+
+    PRINT_TIMESTAMP;
+
+ 
+
+    int x = 10, y = 5;
+
+ 
+
+    std::cout << "x = " << x << ", y = " << y << std::endl;
+
+ 
+
+    std::cout << "ADD = " << ADD(x, y) * 2 << std::endl;
+
+    std::cout << "SUB = " << SUB(x, y) * 2 << std::endl;
+
+    std::cout << "MUL = " << MUL(x, y) * 2 << std::endl;
+
+    std::cout << "DIV = " << DIV(x, y) * 2 << std::endl;
+
+    
+
+ 
+
+    return 0;
+
+}
