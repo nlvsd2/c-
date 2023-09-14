@@ -1,0 +1,20 @@
+#include <iostream>
+
+int main()
+{
+    double width, height;
+    double Area, Circumference;
+
+    std::cout << "Enter the width of rectangle: ";
+    std::cin >> width;
+    std::cout << "Enter the height of rectangle: ";
+    std::cin >> height;
+
+    Area = width * height;
+    Circumference = 2 * (width + height);
+
+    std::cout << "Area of rectangle: " << Area << std::endl;
+    std::cout << "Circumference of rectangle: " << Circumference << std::endl;
+
+    return 0;
+}
