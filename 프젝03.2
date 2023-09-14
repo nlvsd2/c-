@@ -1,0 +1,21 @@
+#include <iostream>
+
+#define PI 3.14159265
+
+int main()
+{
+    double radius;
+    double C, S; //C는 원의 둘레, S는 원의 넓이
+
+    std::cout << "Enter the radius: ";
+    std::cin >> radius;
+
+    C = 2 * PI * radius;
+
+    S = PI * radius * radius;
+
+    std::cout << "원의 둘레: " << C << std::endl;
+    std::cout << "원의 넓이: " << S << std::endl;
+
+    return 0;
+}
