@@ -26,3 +26,37 @@ int main()
 
     return 0;
 }
+
+
+#include <iostream>
+
+using std::cout;
+using std::endl;
+using std::cin;
+
+int main()
+{
+    int num; //원래 숫자
+    int th, h, t, o; //몫, 순서대로 천의 자리, 백의 자리, 십의 자리, 일의 자리
+    int th1, h1, t1; //나머지, 순서대로 천의 자리, 백의 자리, 십의 자리
+
+    cout << "Enter an integer greater than 1,000: ";
+    cin >> num;
+
+    th = num / 1000;
+    th1 = num % 1000;
+
+    h = th1 / 100;
+    h1 = th1 % 100;
+
+    t = h1 / 10;
+    t1 = h1 % 10;
+
+    o = t1;
+
+    cout << "백의 자리 수: " << h << endl;
+    cout << "십의 자리 수: " << t << endl;
+    cout << "일의 자리 수: " << o << endl;
+
+    return 0;
+}
