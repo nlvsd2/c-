@@ -60,3 +60,37 @@ int main()
 
     return 0;
 }
+
+#include <iostream>
+
+using std::cout;
+using std::endl;
+using std::cin;
+
+#define CODE_INDEX(x) (char(x) - 'a' + 1) //ASCII CODE 구하는 MACRO
+                                          //ASCII table에서 a = 97이고,
+                                          //이를 1로 반환하기 위해 a를 빼고 1을 더함
+                                          //ex) a - a = 0, a - a + 1 = 1
+
+int main()
+{
+    char a, b, c, d, e, f, g, h; //숫자 8개
+    int a_index, b_index, c_index, d_index,
+        e_index, f_index, g_index, h_index; //숫자 8개의 인덱스
+    int sum = 0;
+
+    cout << "Enter 8 lowercase alphabet characters: ";
+    cin >> a >> b >> c >> d >> e >> f >> g >> h;
+
+    a_index = CODE_INDEX(a), b_index = CODE_INDEX(b);
+    c_index = CODE_INDEX(c), d_index = CODE_INDEX(d);
+    e_index = CODE_INDEX(e), f_index = CODE_INDEX(f);
+    g_index = CODE_INDEX(g), h_index = CODE_INDEX(h); //MACRO 이용
+
+    sum = a_index + b_index + c_index + d_index
+        + e_index + f_index + g_index + h_index;
+
+    cout << "the sum of alphabetic indices: " << sum << endl;
+
+    return 0;
+}
